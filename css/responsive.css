@@ -1,0 +1,582 @@
+/* ================= SCREEN MOBILE =================== */
+
+@media only screen and (max-width: 480px) and (min-width: 0px) {
+	* {}
+.block-navigation {
+		display: none;
+	}
+	.logo-brand {
+		display: block;
+		width: 100%;
+	}
+	.logo-brand a {
+		display: inline-block;
+		float: right;
+	}
+	.logo-brand a img {
+		width: 90%;
+		margin-top: 6px;
+	}
+.block-item-header-right {
+	display:none;
+}
+
+	
+	.menu-mobile {
+		display: inline-block;
+		line-height: 60px;
+		font-size: 20px;
+		margin-left: 10px;
+	}
+
+	.block-menu-mobile {
+		position: fixed;
+		overflow-y: auto;
+		z-index: 9999999;
+		top: 0;
+		display: block!important;
+		width: 300px;
+		height: 100%;
+		background: #fff;
+		transition: all 0.4s;
+		transform: translateX(-500px);
+	}
+	.block-menu-mobile.show-block-menu-mobile {
+		transform: translateX(0px);
+	}
+
+	.overlay-black {
+		background: #00000057;
+		position: fixed;
+		width: 100%;
+		height: 100%;
+		z-index: 999999;
+		top: 0;
+		visibility: hidden;
+		opacity: 0;
+		transition: all 0.4s;
+	}
+	.overlay-black .close-mobile {
+	display: inline-block;
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    background: #fff;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+	}
+	.overlay-black.show-overlay-black {
+		visibility: visible;
+		opacity: 1;
+	}
+.active-nav-mobile {color: #00bbd3;}
+.accordion-nav-for-mobile .accordion-button {font-size: 15px;font-weight: 500;padding: 15px 20px;}	
+.accordion-nav-for-mobile .accordion-item:first-of-type .accordion-button {
+    border-radius: 0px;
+}
+.accordion-nav-for-mobile .accordion-item {
+    background-color: #fff;
+    border: 0px solid rgba(0,0,0,.125);
+    border-bottom: 1px solid #f3f4f5;
+    border-radius: 0px;
+}
+.accordion-nav-for-mobile .accordion-body {
+	padding: 0px;
+	padding-left: 20px;
+	background: #FAFAFA;
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+.accordion-nav-for-mobile .block-list-nav-sub ul {
+	margin-bottom: 0px;
+}
+
+.accordion-nav-for-mobile .accordion-button::after  {
+   font-family: 'Font Awesome 5 Free';
+   content: "\f107";
+   font-weight: 900;
+   font-size:18px;
+   background:#fff;
+   text-align:center;
+}
+.accordion-nav-for-mobile .accordion-button:focus {
+	border-color: #86b7fe00;
+	box-shadow: 0px 0px 0px transparent;
+}
+.accordion-nav-for-mobile .accordion-button:not(.collapsed) {
+    color: #00bbd3;
+    background-color: #ffffff;
+    box-shadow: none;
+}
+
+.accordion-nav-for-mobile a.dropdown-item.nav-link.nav_item {
+	color: #01191c;
+	font-size: 15px;
+}
+
+.button-submit-salary {
+    width: 100%;
+    margin: 0px;
+    margin-top: 0px;
+    margin-left: 15px;
+}
+.block-input-salary p {
+	margin: 10px 0px;
+	font-weight: bold;
+	text-transform: uppercase;
+}
+.block-search-jobs input {
+	border: 2px solid #f3f4f5;
+	height: 52px;
+	margin-bottom: 20px;
+}
+.block-search-jobs i {
+    position: absolute;
+    left: 16px;
+    top: 10px;
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    background: #ccc0;
+    color: #00838f;
+    text-align: center;
+    z-index: 1;
+}
+.block-search-jobs .dropdown-select {
+    padding-left: 58px;
+    border: 0;
+    height: 50px;
+    line-height: 50px;
+    border: 2px solid #f3f4f5;
+    margin-bottom: 20px;
+}
+.block-search-jobs {
+    background: #fff;
+    padding: 20px 24px;
+    box-shadow: 0px 0px 16px rgb(0 0 0 / 9%);
+}
+
+.result-number {
+	font-size: 18px;
+}
+.block-number-featured {
+    display: inline-flex;
+    margin-left: 0px;
+    margin-bottom: 20px;
+}
+.block-button-cta  {float: none !important;margin-top: 10px;}
+
+.block-content-cta {
+	margin-bottom:30px;
+}
+
+/* ========== Jobs List Page =========== */
+.card-job-list .content-job-list {
+    display: block;
+    align-items: normal;
+}
+.text-job-list {
+	margin-left:0px !important;
+	margin-top: 14px;
+}
+.card-job-list .block-salary-card-job {
+	float:left!important;
+}
+.card-job-list .group-label-tags-skill {
+	float:left!important;
+}
+/* ========== Jobs Detail Page =========== */
+.avatar-company {
+    width: 160px;
+    height: 160px;
+    padding: 40px;
+    box-shadow: 0px 0px 16px #0000000a;
+    margin: 0;
+    margin-bottom: 20px;
+}
+
+.block-salary-job-detail {
+	margin-top:20px;
+}
+.block-share-link {
+	margin-top: 20px;
+}
+.input-share-link {
+    border: 2px solid #E8EDEE;
+    padding: 0px 10px;
+    width: 350px;
+    height: 48px;
+    line-height: 48px;
+    position: relative;
+    overflow: hidden;
+}
+.input-share-link i {
+    display: inline-block;
+    background: #00838F;
+    z-index: 1;
+    color: #fff;
+    width: 44px;
+    height: 44px;
+    text-align: center;
+    line-height: 44px;
+    margin-left: 20px;
+    position: absolute;
+    right: -1px;
+}
+.block-side-bar {
+    padding-right: 0px;
+} 
+
+/* ========== Talent Dashboard Page =========== */
+
+
+.card-analytic {
+	margin-bottom:24px;
+}
+
+.block-side-bar-dashboard {
+	transform: translateX(-300px);
+	transition: all 0.4s;
+}
+.content-dashboard-section {
+    padding-top: 128px;
+    padding-bottom: 48px;
+    padding-left: 10px;
+    padding-right: 10px;
+    background: #fafafa;
+}
+.block-content-dashboard {
+padding:0px;
+}
+
+.icon-nav-sidebar-dashboard-for-mobile {
+	display:block;
+}
+.icon-nav-sidebar-dashboard-for-mobile span {
+	display:inline-block;
+	position:fixed;
+	z-index:9999;
+	bottom:0;
+	background: #00838f;
+	color: #fff;
+	width: 100%;
+	text-align: center;
+	padding: 10px 0px;
+	font-weight: bold;
+}
+.back-top.active a {
+    opacity: 1;
+    top: 88%;
+}
+
+.overlay-black-for-sidebar-dashboard {
+    display: block;
+    background: #00000024;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    z-index: 99999;
+    top: 0;
+    visibility: hidden;
+    opacity: 1;
+    transition: all 0.4s;
+}
+
+.overlay-black-for-sidebar-dashboard.show-overlay-black-for-sidebar-dashboard {
+		visibility: visible;
+		opacity: 1;
+	}
+.block-side-bar-dashboard.show-block-side-bar-dashboard {
+		transform: translateX(0px);
+	}
+.close-overlay-black-for-sidebar-dashboard {display: inline-block;position: absolute;top: 15px;right: 15px;
+	background: #fff;width: 40px;height: 40px;text-align: center;line-height: 40px;}
+
+}
+/* ================= SCREEN TABLET =================== */
+
+@media only screen and (min-width: 480px) and (max-width: 768px) {
+	* {}
+.block-navigation {
+		display: none;
+	}
+	.logo-brand {
+		display: block;
+		width: 100%;
+	}
+	.logo-brand a {
+		display: inline-block;
+		float: right;
+	}
+	.logo-brand a img {
+		width: 90%;
+		margin-top: 6px;
+	}
+.block-item-header-right {
+	display:none;
+}
+
+
+
+
+
+		.menu-mobile {
+		display: inline-block;
+		line-height: 60px;
+		font-size: 20px;
+		margin-left: 10px;
+	}
+
+	.block-menu-mobile {
+		position: fixed;
+		overflow-y: auto;
+		z-index: 9999999;
+		top: 0;
+		display: block!important;
+		width: 300px;
+		height: 100%;
+		background: #fff;
+		transition: all 0.4s;
+		transform: translateX(-500px);
+	}
+	.block-menu-mobile.show-block-menu-mobile {
+		transform: translateX(0px);
+	}
+
+	.overlay-black {
+		background: #00000057;
+		position: fixed;
+		width: 100%;
+		height: 100%;
+		z-index: 999999;
+		top: 0;
+		visibility: hidden;
+		opacity: 0;
+		transition: all 0.4s;
+	}
+	.overlay-black .close-mobile {
+		width: 30px;
+		height: 30px;
+		line-height: 30px;
+		text-align: center;
+		display: inline-block !important;
+		margin-top: 8px;
+		margin-right: 8px;
+		font-size: 18px;
+		background: #fff;
+		position: absolute;
+		right: 0;
+	}
+	.overlay-black.show-overlay-black {
+		visibility: visible;
+		opacity: 1;
+	}
+.active-nav-mobile {color: #00bbd3;}
+.accordion-nav-for-mobile .accordion-button {font-size: 15px;font-weight: 500;padding: 15px 20px;}	
+.accordion-nav-for-mobile .accordion-item:first-of-type .accordion-button {
+    border-radius: 0px;
+}
+.accordion-nav-for-mobile .accordion-item {
+    background-color: #fff;
+    border: 0px solid rgba(0,0,0,.125);
+    border-bottom: 1px solid #f3f4f5;
+    border-radius: 0px;
+}
+.accordion-nav-for-mobile .accordion-body {
+	padding: 0px;
+	padding-left: 20px;
+	background: #FAFAFA;
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+.accordion-nav-for-mobile .block-list-nav-sub ul {
+	margin-bottom: 0px;
+}
+
+.accordion-nav-for-mobile .accordion-button::after  {
+   font-family: 'Font Awesome 5 Free';
+   content: "\f107";
+   font-weight: 900;
+   font-size:18px;
+   background:#fff;
+   text-align:center;
+}
+.accordion-nav-for-mobile .accordion-button:focus {
+	border-color: #86b7fe00;
+	box-shadow: 0px 0px 0px transparent;
+}
+.accordion-nav-for-mobile .accordion-button:not(.collapsed) {
+    color: #00bbd3;
+    background-color: #ffffff;
+    box-shadow: none;
+}
+
+.accordion-nav-for-mobile a.dropdown-item.nav-link.nav_item {
+	color: #01191c;
+	font-size: 15px;
+}
+
+.button-submit-salary {
+    width: 100%;
+    margin: 0px;
+    margin-top: 0px;
+    margin-left: 15px;
+}
+.block-input-salary p {
+	margin: 10px 0px;
+	font-weight: bold;
+	text-transform: uppercase;
+}
+.block-search-jobs input {
+	border: 2px solid #f3f4f5;
+	height: 52px;
+	margin-bottom: 20px;
+}
+.block-search-jobs i {
+    position: absolute;
+    left: 16px;
+    top: 10px;
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    background: #ccc0;
+    color: #00838f;
+    text-align: center;
+    z-index: 1;
+}
+.block-search-jobs .dropdown-select {
+    padding-left: 58px;
+    border: 0;
+    height: 50px;
+    line-height: 50px;
+    border: 2px solid #f3f4f5;
+    margin-bottom: 20px;
+}
+.block-search-jobs {
+    background: #fff;
+    padding: 20px 24px;
+    box-shadow: 0px 0px 16px rgb(0 0 0 / 9%);
+}
+.block-search-jobs .dropdown-select:after {
+    right: 20px;
+}
+.result-number {
+	font-size: 18px;
+}
+.block-number-featured {
+    display: inline-flex;
+    margin-left: 0px;
+    margin-bottom: 20px;
+}
+.block-button-cta  {float: none !important;margin-top: 10px;}
+
+.block-content-cta {
+	margin-bottom:30px;
+}
+/* ========== Jobs Detail Page =========== */
+.avatar-company {
+    width: 160px;
+    height: 160px;
+    padding: 40px;
+    box-shadow: 0px 0px 16px #0000000a;
+    margin: 0;
+    margin-bottom: 20px;
+}
+
+.block-salary-job-detail {
+	margin-top:20px;
+}
+
+.input-share-link {
+    border: 2px solid #E8EDEE;
+    padding: 0px 10px;
+    width: 350px;
+    height: 48px;
+    line-height: 48px;
+    position: relative;
+    overflow: hidden;
+}
+.input-share-link i {
+    display: inline-block;
+    background: #00838F;
+    z-index: 1;
+    color: #fff;
+    width: 44px;
+    height: 44px;
+    text-align: center;
+    line-height: 44px;
+    margin-left: 20px;
+    position: absolute;
+    right: -1px;
+}
+.block-side-bar {
+    padding-right: 0px;
+} 
+
+/* ========== Talent Dashboard Page =========== */
+
+
+.card-analytic {
+	margin-bottom:24px;
+}
+
+.block-side-bar-dashboard {
+	transform: translateX(-300px);
+	transition: all 0.4s;
+}
+.content-dashboard-section {
+    padding-top: 128px;
+    padding-bottom: 48px;
+    padding-left: 10px;
+    padding-right: 10px;
+    background: #fafafa;
+}
+.block-content-dashboard {
+padding:0px;
+}
+
+.icon-nav-sidebar-dashboard-for-mobile {
+	display:block;
+}
+.icon-nav-sidebar-dashboard-for-mobile span {
+	display:inline-block;
+	position:fixed;
+	z-index:9999;
+	bottom:0;
+	background: #00838f;
+	color: #fff;
+	width: 100%;
+	text-align: center;
+	padding: 10px 0px;
+	font-weight: bold;
+}
+.back-top.active a {
+    opacity: 1;
+    top: 88%;
+}
+
+.overlay-black-for-sidebar-dashboard {
+    display: block;
+    background: #00000024;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    z-index: 99999;
+    top: 0;
+    visibility: hidden;
+    opacity: 1;
+    transition: all 0.4s;
+}
+
+.overlay-black-for-sidebar-dashboard.show-overlay-black-for-sidebar-dashboard {
+		visibility: visible;
+		opacity: 1;
+	}
+.block-side-bar-dashboard.show-block-side-bar-dashboard {
+		transform: translateX(0px);
+	}
+.close-overlay-black-for-sidebar-dashboard {display: inline-block;position: absolute;top: 15px;right: 15px;
+	background: #fff;width: 40px;height: 40px;text-align: center;line-height: 40px;}
+}
